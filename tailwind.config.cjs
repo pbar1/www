@@ -56,8 +56,11 @@ module.exports = {
       },
       transparent: "transparent",
     },
+    // TODO: Extend defaults
+    // https://tailwindcss.com/docs/font-family#customizing-the-default-font
     fontFamily: {
-      mono: ["IBM Plex Mono", "monospace"],
+      mono: ["Fira Code", "monospace"],
+      sans: ["Fira Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
     },
     // },
   },
