@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Pierce Bartine",
   desc: "Pierce Bartine's blog",
   title: "Pierce Bartine",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
