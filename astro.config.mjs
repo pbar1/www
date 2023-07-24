@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pbar1.github.io/www/",
+  site: "https://pbar.dev/",
   integrations: [
     tailwind({
       config: {
