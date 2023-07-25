@@ -9,7 +9,7 @@ It has been a while! 2022 came and went and this blog never saw a post. Since th
 
 ## What is it?
 
-ForceCommand is a configuration option exposed by OpenSSH that essentially runs the specified command _instead_ of the command given by the user. For example, if a host's `sshd_config` specifies `ForceCommand echo hello`, then no matter what you do you'll always see the text `hello` printed whenever you attempted to SSH to said host - even interactive sessions.
+ForceCommand is a configuration option exposed by OpenSSH that essentially runs the specified command _instead_ of the command given by the user. For example, if a host's `sshd_config` specifies `ForceCommand <cmd>`, then no matter what you do, `<cmd>` will always be executed instead of whatever command you request whenever you attempt to SSH to said host - even interactive sessions.
 
 One likely example of this in the wild is GitHub. The Git protocol can work over SSH (in addition to HTTPS), and if you've ever wanted to test your auth config you may have seen something like this:
 
@@ -59,7 +59,7 @@ man -P 'less -p ForceCommand' sshd_config
 
 You may have noticed the environment variable `SSH_ORIGINAL_COMMAND` being referenced in the example ForceCommand above. When your ForceCommand is executed, whatever the user's original desired command was gets placed into this environment variable. If they were trying to login with an interactive session, this variable is empty.
 
-For example, if you've got a ForceCommand set and the user attempts to run `ssh user@host echo hi`, then the contents of `SSH_ORIGINAL_COMMAND` would be `echo hi`. If the user runs an interactive shell with just `ssh user@host`, then `SSH_ORIGINAL_COMMAND` will be empty.
+For example, if you've got a ForceCommand set and the user attempts to run `ssh user@host vim`, then the contents of `SSH_ORIGINAL_COMMAND` would be `vim`. If the user runs an interactive shell with just `ssh user@host`, then `SSH_ORIGINAL_COMMAND` will be empty.
 
 ## When to use it?
 
