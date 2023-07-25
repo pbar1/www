@@ -9,7 +9,7 @@ Hello friend! I'm Pierce, a software engineer currently living in the San Franci
 
 I'm relatively active on GitHub building various projects that pique my interest, mainly in [Rust][6] and [Nix][7] these days. A constant source of distraction is my homelab, which may more accurately be called my bonsai tree. I've also worked extensively in Go, and to a lesser degree TypeScript, Python, and C#. Technical interests of mine hinge on most things Unix, cloud, and network security. Open source contributions I've made include maintaining a few Nix packages and adding some [Kubernetes][9] features to [HashiCorp Vault][8].
 
-I'm originally from Houston, and before moving to the Bay Area I've also lived in Indiana for school and Austin for work. Texas holds a special place in my heart of course; they just don't smoke meat anywhere else like they do there. 🤠
+I'm originally from Houston, and before moving to the Bay I've also lived in Indiana for school and Austin for work. Texas holds a special place in my heart of course; they just don't smoke meat anywhere else like they do there. 🤠
 
 Officially I'm a chemical engineer. However, I wouldn't trust myself to engineer a chemical plant in any serious capacity nowadays. My undergraduate was earned at [Rose-Hulman Institute of Technology][4] where I also got a minor in German.
 
