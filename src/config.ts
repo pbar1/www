@@ -19,6 +19,8 @@ export const LOGO_IMAGE = {
   height: 46,
 };
 
+// TODO: Add RSS link pointing to https://pbar.dev/rss.xml
+// TODO: Fetch these icons from somewhere instead of vendoring them
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
