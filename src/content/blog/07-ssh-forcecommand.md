@@ -71,7 +71,7 @@ Where this strategy really starts to get interesting is when you consider [**SSH
 
 SSH has rich _authentication_ mechanisms but does not provide much out of the box in terms of _authorization_, hence all the allusions here of that being the killer app that you can do with a ForceCommand. But authz certainly isn't the only thing you can do; here are a few more ideas to get your mind racing:
 
-- Moving SSH sesisions into isolated cgroups for resource quota accounting and enforcement
+- Moving SSH sessions into isolated cgroups for resource quota accounting and enforcement
 - Spawing SSH sessions in dynamically provisioned containers (like [ContainerSSH][5])
 - Tracing SSH sessions on demand via eBPF (like [SSHLog][6])
 - Performing fine-grained ACL checks on SSH command requests
