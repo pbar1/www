@@ -1,0 +1,11 @@
+lang: en
+home: {}
+menu_links: []
+metas:
+  site: Pierce Bartine
+  description: pbar's personal blog
+  title: =title
+  image: =image
+  twitter: '@pbar_'
+  lang: en
+  generator: false

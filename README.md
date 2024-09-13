@@ -1,7 +1,8 @@
 # www
 
-My personal blog. Based on [AstroPaper][1].
+[pbar.dev][0]. Built with [Lume][1].
 
 <!-- Links -->
 
-[1]: https://github.com/satnaing/astro-paper
+[0]: https://pbar.dev
+[1]: https://lume.land
