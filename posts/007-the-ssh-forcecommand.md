@@ -1,10 +1,11 @@
 ---
 title: The SSH ForceCommand
 url: /the-ssh-forcecommand/
-date: '2023-07-26'
+date: '2023-07-25'
 draft: false
 tags: []
-comments: {}
+comments:
+  src: 'https://hachyderm.io/@pbar/110773251378201562'
 ---
 It has been a while! 2022 came and went and this blog never saw a post. Since the last one I've been using SSH a great deal more because my day-to-day involves building tooling on top of and adjacent to it. One such little-known but highly powerful feature that we're going to dive into today is the humble `ForceCommand`!
 
