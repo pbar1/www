@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.vto
+layout: layouts/post.vto
 title: About
 menu:
   visible: true

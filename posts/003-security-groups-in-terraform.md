@@ -1,12 +1,13 @@
 ---
 title: Security Groups in Terraform
 url: /security-groups-in-terraform/
-date: '2019-01-17'
+date: "2019-01-17"
 draft: false
 tags: []
 comments: {}
 ---
-Terraform is a great tool by Hashicorp that allows teams to keep track of their infrastructure's state and manage it declaratively in code. One of its biggest use cases is in managing the ever-increasing amount of AWS resources, one of which is the bread and butter of cloud networking: the *security group*.
+
+Terraform is a great tool by Hashicorp that allows teams to keep track of their infrastructure's state and manage it declaratively in code. One of its biggest use cases is in managing the ever-increasing amount of AWS resources, one of which is the bread and butter of cloud networking: the _security group_.
 
 Security groups in AWS are simply lists of rules (topping out at 50 rules per group) that can whitelist traffic according to port, CIDR block, and most interestingly other security groups' IDs. For example, one could envison an RDS cluster with a security group called `rds-sg` attached to it, and an Autoscaling group with one called `rds-client-sg` attached to it. In this scenario, `rds-sg` has rules allowing traffic in from each client security group identified by their ID as opposed to CIDR block/IP range. This provides better observability when troubleshooting connectivity issues as well as flexibility when writing Terraform. Security groups are stateful, meaning that any traffic allowed in is also allowed back out.
 
@@ -35,7 +36,7 @@ The cluster's security group must allow egress/ingress to/from the node pools (`
 
 The code should look something like this:
 
-```terraform
+```hcl
 module "eks-cluster" {
   # ...
 }
